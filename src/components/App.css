@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: DodgerBlue;
+}
+
+.header {
+  text-align: center;
+  background-color: DodgerBlue;
+  padding: 20px;
+  font-size: 3rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  height: 80vh;
+  font-size: 30px;
+  overflow: auto;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid;
+  margin: 10px;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0.1;}
+  to {opacity: 1;}
+}
+
+.task-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add-task-btn {
+  font-size: 30px;
+  padding: 0 10px;
+  border: 1px solid dodgerblue;
+  color: dodgerblue;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.task-list-heading {
+  padding: 10px;
+  margin: 10px;
+}
